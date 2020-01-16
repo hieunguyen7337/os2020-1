@@ -1,0 +1,51 @@
+command: echo hello world
+output: hello world
+command:passwd
+output:
+Changing password for hieu.
+Current password: 
+New password: 
+Retype new password: 
+Bad: new and old password are too similar
+passwd: Authentication token manipulation error
+passwd: password unchanged
+command:date
+output:Thu 16 Jan 2020 09:55:49 AM +07
+command:hostname
+output:hieu-Lenovo-G560
+command:arch
+output:x86_64
+command:uname -a
+output:Linux hieu-Lenovo-G560 5.0.0-31-generic #33-Ubuntu SMP Mon Sep 30 18:51:59 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+command:dmesg
+output:[ 2381.699322] audit: type=1400 audit(1579142558.954:109): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=11019 comm="apparmor_parser"
+[ 2381.701402] audit: type=1400 audit(1579142558.954:110): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.core.hook.configure" pid=11020 comm="apparmor_parser"
+[ 2528.320689] perf: interrupt took too long (6222 > 6210), lowering kernel.perf_event_max_sample_rate to 32000
+command:uptime
+output:09:47:43 up 44 min,  1 user,  load average: 0,33, 1,17, 1,43
+command:who am i
+output:unrespone
+command:whoami
+output:hieu
+command:who
+output:hieu     :0           2020-01-16 16:04 (:0)
+command:id
+output:uid=1000(hieu) gid=1000(hieu) groups=1000(hieu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),118(lpadmin),129(sambashare)
+command:last
+output:reboot   system boot  5.0.0-15-generic Sun May 19 23:55 - 16:56  (-6:58)
+reboot   system boot  5.0.0-15-generic Sun May 19 23:52 - 23:54  (00:01)
+hieu     :0           :0               Wed May 15 14:29 - 07:42  (-6:46)
+reboot   system boot  5.0.0-8-generic  Wed May 15 14:27 - 07:42  (-6:45)
+
+wtmp begins Wed May 15 14:27:54 2019
+command:finger
+output:Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+command:w
+output: 09:48:30 up 45 min,  1 user,  load average: 0,29, 1,04, 1,37
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+hieu     :0       :0               16:04   ?xdm?   9:12   0.01s /usr/lib/gdm3/g
+
+
